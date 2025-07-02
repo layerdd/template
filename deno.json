@@ -1,0 +1,14 @@
+{
+  "nodeModulesDir": "auto",
+  "allowScripts": {
+    "npm:@tailwindcss/oxide": true
+  },
+  "tasks": {
+    "dev": "deno run -A npm:vite dev --host --open",
+    "build": "deno run -A npm:vite build",
+    "preview": "deno run -A npm:vite preview --host --open",
+    "prepare": "deno run -A npm:@sveltejs/kit sync || echo ''",
+    "check": "deno run -A npm:@sveltejs/kit sync && deno run -A npm:svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "deno run -A npm:@sveltejs/kit sync && deno run -A npm:svelte-check --tsconfig ./tsconfig.json --watch"
+  }
+}

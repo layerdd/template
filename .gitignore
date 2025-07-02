@@ -1,6 +1,5 @@
-.vnow
-.gemini
-.deno-deploy
+# .vnow
+# .gemini
 node_modules
 
 # Output
