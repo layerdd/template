@@ -10,6 +10,6 @@
     "prepare": "deno run -A npm:@sveltejs/kit sync || echo ''",
     "check": "deno run -A npm:@sveltejs/kit sync && deno run -A npm:svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "deno run -A npm:@sveltejs/kit sync && deno run -A npm:svelte-check --tsconfig ./tsconfig.json --watch",
-    "clean": "git clean -fdx && deno cache --reload"
+    "clean": "git clean -fdx"
   }
 }
