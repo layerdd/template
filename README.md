@@ -7,7 +7,7 @@ Everything you need to build a Svelte project, powered by Deno and SvelteKit.
 Install dependencies:
 
 ```bash
-deno install
+deno task install
 ```
 
 ## Developing

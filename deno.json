@@ -1,9 +1,8 @@
 {
   "nodeModulesDir": "auto",
-  "allowScripts": {
-    "npm:@tailwindcss/oxide": true
-  },
+  "allowScripts": "*",
   "tasks": {
+    "install": "deno install --allow-scripts",
     "dev": "deno run -A npm:vite dev --host --open",
     "build": "deno run -A npm:vite build",
     "preview": "deno run -A npm:vite preview --host --open",
