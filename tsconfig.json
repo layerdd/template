@@ -1,19 +1,17 @@
 {
-	"extends": "./.svelte-kit/tsconfig.json",
+	"extends": "./packages/config/ts/tsconfig.base.json",
 	"compilerOptions": {
-		"allowJs": true,
-		"checkJs": true,
-		"esModuleInterop": true,
-		"forceConsistentCasingInFileNames": true,
-		"resolveJsonModule": true,
-		"skipLibCheck": true,
-		"sourceMap": true,
-		"strict": true,
-		"moduleResolution": "bundler"
-	}
-	// Path aliases are handled by https://svelte.dev/docs/kit/configuration#alias
-	// except $lib which is handled by https://svelte.dev/docs/kit/configuration#files
-	//
-	// If you want to overwrite includes/excludes, make sure to copy over the relevant includes/excludes
-	// from the referenced tsconfig.json - TypeScript does not merge them in
+		"composite": true,
+		"declaration": true,
+		"declarationMap": true
+	},
+	"references": [
+		{ "path": "./apps/site" },
+		{ "path": "./apps/storybook" },
+		{ "path": "./packages/config/ts" },
+		{ "path": "./packages/tools" },
+		{ "path": "./packages/ui" }
+	],
+	"files": [],
+	"include": []
 }

@@ -1,16 +1,17 @@
-# .vnow
-# .gemini
 node_modules
+.gemini
+.vnow
+.turbo
 
 # Output
-.deno-deploy
+.storybook
 .output
 .vercel
 .netlify
 .wrangler
 /.svelte-kit
 /build
-
+/dist
 
 # OS
 .DS_Store
@@ -25,3 +26,8 @@ Thumbs.db
 # Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+*storybook.log
+storybook-static
+
+.examples
