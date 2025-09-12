@@ -17,7 +17,8 @@
     "update": "pnpm up --latest -r",
     "reset": "git clean -fdx",
     "clean": "git clean -fdX",
-    "clear": "git clean -fd"
+    "clear": "git clean -fd",
+    "postinstall": "turbo symlinks"
   },
   "devDependencies": {
     "@iconify-json/carbon": "^1.2.13",
