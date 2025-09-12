@@ -42,7 +42,6 @@
 		flip: { control: "inline-radio", options: ["x", "y", "xy"], table: { category: "Props" } },
 		invert: { control: "boolean", table: { category: "Styles" } },
 		negative: { control: "boolean", table: { category: "Props" } },
-		svg: { control: "text", table: { category: "Props" } },
 		children: { control: false, table: { category: "Content", disable: true } },
 		primary: { control: "inline-radio", table: { category: "Styles", disable: true } },
 		secondary: { control: "inline-radio", table: { category: "Styles", disable: true } },

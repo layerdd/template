@@ -38,13 +38,23 @@
 		center: { control: "inline-radio", table: { category: "Layout", disable: true } },
 		right: { control: "inline-radio", table: { category: "Layout", disable: true } },
 		total: { control: "text", description: "Total count", table: { category: "Controls" } },
-		variant: { control: "inline-radio", options: ["service", "profile", "testimonial"], table: { category: "Props" } },
+		variant: { control: "inline-radio", options: ["service", "contact"], table: { category: "Props" } },
 		title: { control: "text", table: { category: "Props" } },
-		subtitle: { control: "text", table: { category: "Props" } },
 		description: { control: "text", table: { category: "Props" } },
 		label: { control: "text", table: { category: "Props" } },
-		image: { control: "text", table: { category: "Content" } },
-		icon: { control: "text", table: { category: "Content" } },
+		name: { control: "text", table: { category: "Props" } },
+		jobTitle: { control: "text", table: { category: "Props" } },
+		department: { control: "text", table: { category: "Props" } },
+		avatar: { control: "text", table: { category: "Props" } },
+		location: { control: "text", table: { category: "Props" } },
+		email: { control: "text", table: { category: "Props" } },
+		phone: { control: "text", table: { category: "Props" } },
+		bio: { control: "text", table: { category: "Props" } },
+		linkedin: { control: "text", table: { category: "Props" } },
+		github: { control: "text", table: { category: "Props" } },
+		website: { control: "text", table: { category: "Props" } },
+		twitter: { control: "text", table: { category: "Props" } },
+		status: { control: "inline-radio", options: ["available", "busy", "away", "offline"], table: { category: "Props" } },
 		children: { control: false, table: { category: "Content", disable: true } }
 	},
 		args: {
@@ -96,6 +106,12 @@
 
 <Story name="Variant 1" args={{"variant":"service","label":"Card"}} tags={["!dev"]} />
 
-<Story name="Variant 2" args={{"variant":"profile","label":"Card"}} tags={["!dev"]} />
+<Story name="Variant 2" args={{"variant":"contact","label":"Card"}} tags={["!dev"]} />
 
-<Story name="Variant 3" args={{"variant":"testimonial","label":"Card"}} tags={["!dev"]} />
+<Story name="Status 1" args={{"status":"available","label":"Card"}} tags={["!dev"]} />
+
+<Story name="Status 2" args={{"status":"busy","label":"Card"}} tags={["!dev"]} />
+
+<Story name="Status 3" args={{"status":"away","label":"Card"}} tags={["!dev"]} />
+
+<Story name="Status 4" args={{"status":"offline","label":"Card"}} tags={["!dev"]} />
