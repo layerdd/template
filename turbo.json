@@ -3,7 +3,6 @@
   "tasks": {
     "dev": {
       "dependsOn": [
-        "symlinks",
         "barrel"
       ],
       "cache": false,
@@ -11,7 +10,6 @@
     },
     "site#dev": {
       "dependsOn": [
-        "symlinks",
         "@layerd/ui#barrel"
       ],
       "cache": false,
